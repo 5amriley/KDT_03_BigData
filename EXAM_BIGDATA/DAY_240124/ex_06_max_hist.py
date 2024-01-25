@@ -2,7 +2,7 @@ import csv
 import matplotlib.pyplot as plt
 import koreanize_matplotlib
 
-filename = '../DATA/daegu-utf8.csv'
+filename = '../../DATA/daegu-utf8.csv'
 f = open(filename, encoding='utf-8-sig')
 data = csv.reader(f)
 next(data)
