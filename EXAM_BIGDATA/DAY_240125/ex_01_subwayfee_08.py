@@ -36,7 +36,7 @@ with open('DATA/subwayfee.csv', encoding='utf-8-sig') as f:
         plt.figure(dpi=100) # 저장할 그림파일의 dpi 설정
         plt.title(row[3] + ' ' + row[1])
         plt.pie(row[4:8], labels=label, colors=color_list, autopct='%.1f%%', shadow=True)
-        plt.savefig('IMG_temp/' + row[3] + ' ' + row[1] + '.png') # 그림 저장
+        plt.savefig('IMG/' + row[3] + ' ' + row[1] + '.png') # 그림 저장
         plt.close() # savefig()과 관련, 파일 닫기
 
         # 10개 역의 파이차트만 저장함
