@@ -1,6 +1,6 @@
 import pandas as pd
 
-filename = '../../DATA/daegu-utf8.csv'
+filename = 'DATA/daegu-utf8.csv'
 weather_df = pd.read_csv(filename, encoding='utf-8-sig')
 print(weather_df.columns)
 print(weather_df['날짜'].dtype)   # 날짜 컬럼은 object 타입
@@ -26,7 +26,7 @@ print(weather_df.count())
 print(weather_df.head())
 
 # csv 파일로 저장
-savefile = '../../DATA/daegu-utf8-df.csv'
+savefile = 'DATA/daegu-utf8-df.csv'
 weather_df.to_csv(savefile, index=False, mode='w', encoding='utf-8-sig')    # 해당 엑셀 파일을 열어두었다면 PermissionError가 발생한다.
 
 # 특정 년도와 달의 최고, 최저 기온의 평균값 계산

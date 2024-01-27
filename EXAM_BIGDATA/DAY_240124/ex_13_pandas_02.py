@@ -18,7 +18,7 @@ def main():
     search_month = int(input('달을 입력하세요: '))
 
     # csv 파일에서 읽어오면 항상 문자열로 읽어오기 때문에 '날짜' 열을 datetime 객체로 형변환
-    filename = '../../DATA/daegu-utf8-df.csv'
+    filename = 'DATA/daegu-utf8-df.csv'
     weather_df = pd.read_csv(filename, encoding='utf-8-sig')
     weather_df['날짜'] = pd.to_datetime(weather_df['날짜'], format='%Y-%m-%d')
 

@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import koreanize_matplotlib
 
 def draw_graph_on_date(month, day):
-    filename = '../../DATA/daegu-utf8.csv'
+    filename = 'DATA/daegu-utf8.csv'
     f = open(filename, encoding='utf-8-sig')
     data = csv.reader(f)
     next(data)

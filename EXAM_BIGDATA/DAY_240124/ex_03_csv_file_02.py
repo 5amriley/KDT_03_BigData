@@ -1,6 +1,6 @@
 import csv
 
-filename = '../../DATA/daegu-utf8.csv'
+filename = 'DATA/daegu-utf8.csv'
 f = open(filename, 'r', encoding='utf-8-sig')     # 쓰기용으로 파일 open
 data = csv.reader(f, delimiter=',')
 

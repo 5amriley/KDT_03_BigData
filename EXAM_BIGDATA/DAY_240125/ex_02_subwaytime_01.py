@@ -14,7 +14,7 @@ import csv
 
 result = []
 total_number = 0
-with open('../../DATA/subwaytime.csv', encoding='utf-8-sig') as f:
+with open('DATA/subwaytime.csv', encoding='utf-8-sig') as f:
     data = csv.reader(f)
     next(data)  # 2줄의 헤더 정보를 건너뜀
     next(data)

@@ -1,11 +1,11 @@
 import csv
 
-filename = '../../DATA/daegu.csv'
+filename = 'DATA/daegu.csv'
 # encoding='utf-8-sig'로 '\ufeff' 삭제
 fin = open(filename, 'r', encoding='utf-8-sig')     # 읽기용으로 파일 open
 data = csv.reader(fin, delimiter=',')
 
-newfilename = '../../DATA/daegu-utf8.csv'
+newfilename = 'DATA/daegu-utf8.csv'
 fout = open(newfilename, 'w', newline='', encoding='utf-8-sig')     # 쓰기용으로 파일 open
 wr = csv.writer(fout)
 

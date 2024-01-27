@@ -4,7 +4,7 @@
 
 import csv
 
-f = open('../../DATA/subwayfee.csv', encoding='utf-8-sig')
+f = open('DATA/subwayfee.csv', encoding='utf-8-sig')
 data = csv.reader(f)
 header = next(data)
 

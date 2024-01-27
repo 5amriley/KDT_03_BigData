@@ -9,7 +9,7 @@ print() 함수 안에 문자열 여러 개를 넣을 때 콤마 없어도 작동
 
 import csv
 
-f = open('../../DATA/subwayfee.csv', encoding='utf-8-sig')
+f = open('DATA/subwayfee.csv', encoding='utf-8-sig')
 data=csv.reader(f)
 header=next(data)
 

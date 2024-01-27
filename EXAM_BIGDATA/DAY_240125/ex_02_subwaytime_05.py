@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 import koreanize_matplotlib
 import platform
 
-with open('../../DATA/subwaytime.csv', encoding='utf-8-sig') as f:
+with open('DATA/subwaytime.csv', encoding='utf-8-sig') as f:
     data = csv.reader(f)
     next(data)  # 2줄의 헤더 정보를 건너뜀
     next(data)
@@ -30,7 +30,7 @@ with open('../../DATA/subwaytime.csv', encoding='utf-8-sig') as f:
     for row in data:
         row[4:-1] = map(int, row[4:-1])
         for j in range(23):
-            a = row[j * 2 + 4]  # j=0: data[0 * 2 + 4]의 값을 max[0]에 저장하기 위함
+            a = row[j * 2 + 4]  # j=0: DATA[0 * 2 + 4]의 값을 max[0]에 저장하기 위함
             if a > max[j]:
                 max[j] = a
                 max_station[j] = xtick_list[j] + '시:' + row[3]  # 4시: 구로

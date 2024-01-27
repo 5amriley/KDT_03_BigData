@@ -15,7 +15,7 @@ max_station = [''] * 4
 label = ['유임승차', '유임하차', '무임승차', '무임하차']
 
 # with 구문 : 자동으로 파일을 close() 시킴
-with open('../../DATA/subwayfee.csv', encoding='utf-8-sig') as f:
+with open('DATA/subwayfee.csv', encoding='utf-8-sig') as f:
     data=csv.reader(f)
     next(data)
 

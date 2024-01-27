@@ -4,7 +4,7 @@ import platform
 import koreanize_matplotlib
 
 def draw_lowhigh_graph(start_year, month, day):
-    filename = '../../DATA/daegu-utf8.csv'
+    filename = 'DATA/daegu-utf8.csv'
     f = open(filename, encoding='utf-8-sig')
     data = csv.reader(f)
     next(data)

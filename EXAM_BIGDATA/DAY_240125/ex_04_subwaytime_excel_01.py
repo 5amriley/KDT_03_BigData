@@ -6,7 +6,7 @@
 
 import pandas as pd
 
-filename = '../../DATA/subway.xls'
+filename = 'DATA/subway.xls'
 df = pd.read_excel(filename, sheet_name='지하철 시간대별 이용현황', header=[0, 1])
 print(df.head())
 

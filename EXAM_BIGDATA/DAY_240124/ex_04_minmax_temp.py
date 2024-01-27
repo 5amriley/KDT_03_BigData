@@ -38,7 +38,7 @@ def get_minmax_temp(data):
     print(f'대구 최고 기온 날짜 : {max_date}, 온도 : {max_temp}')
 
 def main():
-    filename = '../../DATA/daegu-utf8.csv'
+    filename = 'DATA/daegu-utf8.csv'
     f = open(filename, encoding='utf-8-sig')
     data = csv.reader(f)    # csv reader 객체 생성
     get_minmax_temp(data)
