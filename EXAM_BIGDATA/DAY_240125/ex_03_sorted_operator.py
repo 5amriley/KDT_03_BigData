@@ -1,5 +1,5 @@
 '''
-operator를 사용한 dictionary 정렬
+operator 패키지를 사용한 dictionary 정렬
 
 [주목할 점]
 key 파라미터에 operator.itemgetter()를 넘겨서 정렬할 수도 있다.
