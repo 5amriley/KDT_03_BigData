@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import koreanize_matplotlib
 
 # DataFrame으로 저장
-filename = '../../EXAM_BIGDATA/DAY_240126/DATA/gender.csv'
+filename = '../../EXAM_PUBLIC_DATA/DAY_240126/DATA/gender.csv'
 genderDF = pd.read_csv(filename, encoding='utf-8-sig', header=[0])
 
 # '대구'에 해당하는 행만 필터링하여 daeguDF에 저장
